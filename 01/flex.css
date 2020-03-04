@@ -4,7 +4,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
 }
 
@@ -13,9 +13,31 @@ body {
     
     justify-content: center;
     align-content: center;
-    transition: flex-grow 0.3s ease-in-out;
+/*    transition: flex-grow 0.3s ease-in-out;*/
+    
+    flex-basis: 100px;
+/*    flex-shrink: 1;*/
+/*    height: auto;*/
 }
 
 .card:hover {
-    flex-grow: 1;
+/*    flex-grow: 1;*/
 }
+
+.card:nth-child(2) {
+    margin: auto;
+}
+
+.card:nth-child(4) {
+    margin-right: calc(100% - 105px);
+}
+
+/*
+.card:nth-child(3) {
+    flex-shrink: 2;
+}
+    
+.card:nth-child(5) {
+    flex-shrink: 0;
+}
+*/
